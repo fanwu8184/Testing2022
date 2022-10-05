@@ -24,7 +24,7 @@ struct ContentView: View {
                     .border(Color.black, width: 1)
                     .multilineTextAlignment(.center)
                 
-                Button("Sendeeeeeeeee") {
+                Button("Sendeeee") {
                     bluetoothService.send()
                 }
                 .padding()
