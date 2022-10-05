@@ -17,6 +17,14 @@
 		B97E556F280536E9007B984A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E5545280536E7007B984A /* ContentView.swift */; };
 		B97E5570280536E9007B984A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97E5546280536E8007B984A /* Assets.xcassets */; };
 		B97E5571280536E9007B984A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97E5546280536E8007B984A /* Assets.xcassets */; };
+		B97E558128053767007B984A /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E558028053767007B984A /* BluetoothService.swift */; };
+		B97E558228053767007B984A /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E558028053767007B984A /* BluetoothService.swift */; };
+		B97E55842805422E007B984A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E55832805422E007B984A /* AppDelegate.swift */; };
+		B97E55852805422E007B984A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E55832805422E007B984A /* AppDelegate.swift */; };
+		B9C8466028078C7D00363259 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8465F28078C7D00363259 /* NotificationService.swift */; };
+		B9C8466128078C7D00363259 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8465F28078C7D00363259 /* NotificationService.swift */; };
+		B9CC738B28064CE300D4D1ED /* BackgroundTasksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC738A28064CE300D4D1ED /* BackgroundTasksService.swift */; };
+		B9CC738C28064CE300D4D1ED /* BackgroundTasksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC738A28064CE300D4D1ED /* BackgroundTasksService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,11 @@
 		B97E5564280536E8007B984A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97E5568280536E8007B984A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B97E556A280536E8007B984A /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		B97E558028053767007B984A /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
+		B97E55832805422E007B984A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B97E55862805461A007B984A /* Testing2022--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Testing2022--iOS--Info.plist"; sourceTree = "<group>"; };
+		B9C8465F28078C7D00363259 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B9CC738A28064CE300D4D1ED /* BackgroundTasksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTasksService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,7 @@
 		B97E553E280536E6007B984A = {
 			isa = PBXGroup;
 			children = (
+				B97E55862805461A007B984A /* Testing2022--iOS--Info.plist */,
 				B97E5543280536E7007B984A /* Shared */,
 				B97E5552280536E8007B984A /* macOS */,
 				B97E555B280536E8007B984A /* Tests iOS */,
@@ -99,7 +113,11 @@
 			children = (
 				B97E5544280536E7007B984A /* Testing2022App.swift */,
 				B97E5545280536E7007B984A /* ContentView.swift */,
+				B97E558028053767007B984A /* BluetoothService.swift */,
+				B9CC738A28064CE300D4D1ED /* BackgroundTasksService.swift */,
 				B97E5546280536E8007B984A /* Assets.xcassets */,
+				B97E55832805422E007B984A /* AppDelegate.swift */,
+				B9C8465F28078C7D00363259 /* NotificationService.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -222,7 +240,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					B97E554A280536E8007B984A = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -299,7 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CC738B28064CE300D4D1ED /* BackgroundTasksService.swift in Sources */,
+				B97E55842805422E007B984A /* AppDelegate.swift in Sources */,
 				B97E556E280536E9007B984A /* ContentView.swift in Sources */,
+				B97E558128053767007B984A /* BluetoothService.swift in Sources */,
+				B9C8466028078C7D00363259 /* NotificationService.swift in Sources */,
 				B97E556C280536E8007B984A /* Testing2022App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CC738C28064CE300D4D1ED /* BackgroundTasksService.swift in Sources */,
+				B97E55852805422E007B984A /* AppDelegate.swift in Sources */,
 				B97E556F280536E9007B984A /* ContentView.swift in Sources */,
+				B97E558228053767007B984A /* BluetoothService.swift in Sources */,
+				B9C8466128078C7D00363259 /* NotificationService.swift in Sources */,
 				B97E556D280536E8007B984A /* Testing2022App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,14 +489,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3LD7FM335A;
+				DEVELOPMENT_TEAM = VSBKM7X7YD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Testing2022--iOS--Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Can this app use Bluetootth?";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Can this app communicate with Bluetooth peripherals?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,14 +523,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3LD7FM335A;
+				DEVELOPMENT_TEAM = VSBKM7X7YD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Testing2022--iOS--Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Can this app use Bluetootth?";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Can this app communicate with Bluetooth peripherals?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,6 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -551,6 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
