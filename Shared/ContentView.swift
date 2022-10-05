@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Button("Send Current deddddddd2d") {
+            Button("Send Current 09:47") {
                 bluetoothService.sendCurrentTime()
             }
             .padding()
